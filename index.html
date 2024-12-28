@@ -1,0 +1,48 @@
+<!--CTIS255 Final Project-->
+
+<!--Description & Extras:-->
+<!--1.this program handles error messages, for example if 
+the sell/trade input is  invalid or if there is not enough money-->
+<!--2.the candle stick lines thicken or thin based on the difference 
+between top and bottom values, making days with significant 
+differences easily noticeable-->
+
+<!--Team Members:-->
+<!--Duygu Abbasoğlu 22102978-->
+<!--Ece Naz Çalkınsın 22003342-->
+<!--Emir Kılıç 22203258-->
+<!--Ege Yakut 22302095-->
+<!--Basak Uran 22102892-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 - Fall - Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="profiles_db.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>    
+</head>
+<body>
+    <div class="header">
+        <p id="ctis">CTIS</p>
+        <p id="crypto">Crypto Trading Information System</p>
+    </div>
+    <div id="profiles">
+    </div>
+    <div class="newProfile" onclick="showPopup()">
+        <p id="plus">+</p>
+        <p id="new">New Profile</p>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <h3>New Profile</h3>
+        <input type="text" id="profileName" name="profileName" placeholder="Enter new profile...">
+        <button id="addProfile">Add</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" co
+    ntent="width=device-width, initial-scale=1.0">
+    <title>Crypto Trading Information System</title>
+    <link rel="stylesheet" href="./styleInUser.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="./db.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jsInUser.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p id="ctis">CTIS</p>
+        <p id="crypto">Crypto Trading Information System</p>
+        <div id="profileheader">
+            <img id="profileIcon" src="./images/profile-icon.png" alt="Profile Icon">
+        </div>
+        <div id="logout">
+            <i class="fa-solid fa-door-open" style="color: #000000;"></i>
+            <button id="buttonItself">Logout</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Day 1</h2>
+        <span id="currentDateDisplay"></span>
+        
+        <div id="playBut">
+            <div id="nextDayButton">
+                <i class="fa-solid fa-forward"></i>
+                <button>Next Day</button>
+            </div>
+        
+            <div id="playPauseButton">
+                <i class="fa-solid fa-play"></i>
+                <button>Play</button>
+            </div>
+        </div>
+        
+        <div id="icons">
+            <img src="./images/ada.png" id="ADA">
+            <img src="./images/avax.png" id="AVAX">
+            <img src="./images/btc.png" id="BTC" class="selected">
+            <img src="./images/doge.png" id="DOGE">
+            <img src="./images/eth.png" id="ETH">
+            <img src="./images/pol.png" id="POL">
+            <img src="./images/snx.png" id="SNX">
+            <img src="./images/trx.png" id="TRX">
+            <img src="./images/xrp.png" id="XRP">
+        </div>
+
+        <div class="image-panel">
+            <img src="./images/btc.png" alt="Bitcoin">
+            <span>Bitcoin</span>
+            <span id="coinInfo"></span>
+        </div>
+    </div>
+        <div class="candlechart"></div>
+
+    <div>
+        <h1 id="wallet-display">$1000.0</h1>
+    </div>
+
+    <div class="container">
+        <div class="trading">
+            <h5>Trading</h5>
+            <div class="trade-buttons">
+                <button class="buy">Buy</button>
+                <button class="sell">Sell</button>
+            </div>
+            <div class="amount-input">
+                <input type="text" placeholder="Amount">
+                <span>= $</span>
+            </div>
+            <button class="sell-tron">Buy TRON</button>
+        </div>
+
+        <div class="wallet2">
+            <h5>Wallet</h5>
+            <div class="wallet">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Coin</td>
+                            <td>Amount</td>
+                            <td>Subtotal</td>
+                            <td>Last Close</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dollar-row">
+                            <td>Dollar</td>
+                            <td class="highlight">$1000.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

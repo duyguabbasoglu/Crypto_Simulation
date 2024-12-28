@@ -1,0 +1,424 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;              
+    height: 130vh;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #dbd8d8;
+    margin: 0 auto; 
+    padding: 0;
+}
+
+.header {
+    display: flex;          
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#ctis {
+    font-weight: bold;
+    margin: 0;
+}
+
+#crypto {
+    font-size: 13px;
+    margin: 0;
+    margin-right: auto;
+}
+
+#profileheader {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+#profileNameDisplay {
+    font-size: 14px;
+    margin-left: 0;
+}
+
+
+#profileIcon {
+    width: 30px;
+    height: 30px;
+}
+
+#logout {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border: 1px solid #AAA;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    height:20px;
+}
+
+#buttonItself {
+    border: none;
+    font-size: 14px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+#logout:hover button, #logout:hover i, #logout:hover {
+    background-color: #dfdede;
+}
+
+#nextDayButton:hover, #nextDayButton:hover button, #playPauseButton:hover, 
+#playPauseButton:hover button {
+    background-color: #dfdede;
+    cursor: pointer;
+}
+
+/* we ensured we did responsive design
+ for smaller devices in here*/
+
+.content h2, #currentDateDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 7px;
+    cursor: pointer;
+    padding:10px;
+    border: 1px solid #edebeb;
+    border-radius: 7px 7px 0 0;
+}
+
+#icons img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+
+#playBut {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#nextDayButton, #playPauseButton {
+    display: flex;
+    width: 90px;
+    height: 20px;
+    margin: 0 8px;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+}
+
+
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size:14px;
+}
+
+
+.image-panel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    margin: 0 7px; 
+    padding: 10px 7px;
+    text-align: left;
+    border: 1px solid #edebeb;
+    border-radius: 1px;
+    height: auto;
+}
+
+.image-panel img {
+    height: 15px;
+    width: 15px;
+    transition: transform 3s ease-in-out;
+}
+
+.selected {
+    animation: pulse 90s infinite;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: -60px;
+}
+
+.trading h5, .wallet2 h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size:17px;
+}
+
+.trade-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+    height: 35px;
+}
+
+.trade-buttons button {
+    padding: 5px 20px;
+    line-height: 1;
+    font-size: 14px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.trade-buttons .buy  .trade-buttons .sell{
+    border: 1px solid #AAA;
+    background-color: GREEN;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+
+.amount-input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 7px;
+    width: 250px;
+}
+
+.amount-input input {
+    flex: 1;
+    padding: 5px;
+    border: 1.5px solid lightgrey;
+    border-radius: 5px;
+    min-width: 80px;
+}
+
+.sell-tron {
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:13px;
+}
+
+.wallet table {
+    width: 99%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.wallet thead {
+    background-color: #b3b3ff;
+    color: white;
+}
+
+.wallet .dollar-row {
+    background-color: #8bf58b;
+}
+
+.highlight {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+#wallet-display {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    height: 100px;
+    margin-top: -30px;
+    font-size: 40px;
+}
+
+
+.trading {
+    flex: 1 1 40%;
+    padding: 10px;
+}
+
+.wallet2 {
+    flex: 1 1 60%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.trade-buttons .buy {
+    background-color: white;
+    color: black;
+    border: 1px solid #AAA;
+    cursor: pointer;
+    pointer-events: auto;
+    border-radius: 3px;
+}
+
+.trade-buttons .sell {
+    background-color: white;
+    color: #AAA;
+    border: 1px solid #AAA;
+    cursor: pointer;
+    pointer-events: auto;
+    border-radius: 3px;
+}
+
+.trade-buttons .buy.active {
+    background-color: green;
+    color: white;
+    pointer-events: none;
+    border: none;
+}
+
+.trade-buttons .sell.active {
+    background-color: red;
+    color: white;
+    pointer-events: none;
+    border: none;
+}
+
+.sell-tron {
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sell-tron.active {
+    background-color: red;
+    color: white;
+}
+
+.candlechart {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    max-height: 1000px;
+    margin: 20px 7px;
+    overflow: hidden; 
+    padding: 10px 10px 10px 40px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.last-close-line {
+    position: absolute;
+    border-top: 1px dashed rgb(184, 184, 184);
+    pointer-events: none; 
+}
+
+.last-close-label {
+    position: absolute;
+    color: rgb(184, 184, 184);
+    background-color: #fff;
+    font-size: 12px;
+    padding: 2dvh 4px;
+    pointer-events: none;
+    white-space: nowrap;
+    transform: translateY(-50%); 
+}
+
+.stick {
+    position: absolute; 
+    width: 0.7px;
+    background-color: #333;
+}
+
+.bar {
+    position: absolute; 
+    width: 8px;
+    border: 1px solid #000;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 9999;
+}
+
+#coinInfo {
+    display: flex;
+    color: rgb(194, 45, 45);
+    font-size: 0.9rem;
+    margin-left: 50px;
+    font-size: smaller;
+    font-weight: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#wallet-display.heartbeat {
+    animation: heartbeat 1s infinite;
+}
+
+.min-line, .max-line {
+    border-top: 1px solid #a8a8a8;
+    position: absolute;
+}
+
+.min-label, .max-label {
+    position: absolute;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
