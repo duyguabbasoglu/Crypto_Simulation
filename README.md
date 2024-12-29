@@ -13,8 +13,7 @@ with real-time charts, price updates, and portfolio tracking.
 
 ## Technologies Used
 - **HTML5**, **CSS3**, **JavaScript**: For the frontend development.
-- **jQuery**: Simplifying DOM manipulation and event handling.
-- **GitHub**: Version control and collaboration.
+- **jQuery**: Simplifying DOM manipulation without using any DOM element and event handling.
 
 ## How to Run the Project
 1. Clone the repository:
